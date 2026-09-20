@@ -9,9 +9,11 @@ local password manager without requiring Accessibility or Autofill access.
 - Inserts text using `InputConnection.commitText()`
 - No Accessibility Service
 - No Autofill Service
-- Works with a local password-management workflow
 - Termux integration
 - GPG/pass-compatible workflow
+- Biometric authentication for password fetching and generation
+- Password generation
+- QWERTY, symbol, and function keyboards
 
 ## Security
 

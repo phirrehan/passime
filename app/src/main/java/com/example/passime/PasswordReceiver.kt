@@ -6,31 +6,17 @@ import android.content.Intent
 
 class PasswordReceiver : BroadcastReceiver() {
 
-    override fun onReceive(
-        context: Context,
-        intent: Intent
-    ) {
+    override fun onReceive(context: Context, intent: Intent) {
         if (intent.action != "com.example.passime.PASSWORD") {
             return
         }
 
-        val receivedToken =
-            intent.getStringExtra("token")
-
-        val password =
-            intent.getStringExtra("password")
-
-        val service =
-            PassImeService.instance
-
-        val expectedToken =
-            service?.pendingAuthToken
+        val receivedToken = intent.getStringExtra("token")
+        val password = intent.getStringExtra("password")
+        val service = PassImeService.instance ?: return
+        val expectedToken = service.pendingAuthToken ?: return
 
         if (receivedToken == null || password == null) {
-            return
-        }
-
-        if (expectedToken == null) {
             return
         }
 
@@ -38,11 +24,7 @@ class PasswordReceiver : BroadcastReceiver() {
             return
         }
 
-        // Token is one-time-use.
         service.pendingAuthToken = null
-
-        // Store the password for explicit insertion through
-        // the Password button.
         service.pendingPassword = password
     }
 }

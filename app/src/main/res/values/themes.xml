@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.PassIme" parent="android:style/Theme.Material.Light.NoActionBar">
+
+      <!-- Window -->
+      <item name="android:windowBackground">@color/keyboard_background</item>
+
+      <!-- Focus / selection / cursor accent -->
+      <item name="android:colorAccent">@color/enter_background</item>
+
+      <!-- System bars -->
+      <item name="android:statusBarColor">@color/keyboard_background</item>
+      <item name="android:navigationBarColor">@color/keyboard_background</item>
+      <item name="android:windowLightStatusBar">false</item>
+      <item name="android:windowLightNavigationBar">false</item>
+
+      <!-- Default text -->
+      <item name="android:textColorPrimary">@color/key_foreground</item>
+      <item name="android:textColorSecondary">@color/key_foreground</item>
+
+    </style>
+
+</resources>

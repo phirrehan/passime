@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <color name="keyboard_background">#11111A</color>
+
+    <color name="key_background">#1F1E2D</color>
+    <color name="key_foreground">#FFFFFF</color>
+
+    <color name="enter_background">#CBA6F6</color>
+    <color name="enter_foreground">#000000</color>
+
+</resources>

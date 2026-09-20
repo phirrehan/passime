@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppButton" parent="@android:style/Widget.Material.Button">
+        <item name="android:fontFamily">@font/jetbrains_mono_nerd_font</item>
+        <item name="android:textColor">@color/key_foreground</item>
+        <item name="android:backgroundTint">@color/key_background</item>
+    </style>
+    <style name="KeyboardKey">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:fontFamily">@font/jetbrains_mono_nerd_font</item>
+        <item name="android:textSize">@dimen/key_text_size</item>
+        <item name="android:textColor">@color/key_foreground</item>
+        <item name="android:backgroundTint">@color/key_background</item>
+    </style>
+    <style name="KeyboardWideKey" parent="KeyboardKey">
+        <item name="android:textSize">@dimen/wide_key_text_size</item>
+    </style>
+
+    <style name="KeyboardEnterKey" parent="KeyboardKey">
+        <item name="android:textSize">@dimen/enter_key_text_size</item>
+        <item name="android:textColor">@color/enter_foreground</item>
+        <item name="android:backgroundTint">@color/enter_background</item>
+    </style>
+    <style name="KeyboardShiftKey" parent="KeyboardWideKey">
+        <item name="android:textSize">26sp</item>
+    </style>
+</resources>
