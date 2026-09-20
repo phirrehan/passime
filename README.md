@@ -37,3 +37,7 @@ Then enable PassIme under Android's keyboard settings.
 Clone the repository and build with:
 
     ./gradlew assembleRelease
+
+## Note
+
+This project is entirely vibe coded.
